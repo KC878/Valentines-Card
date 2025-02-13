@@ -1,0 +1,63 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen background */
+body {
+  height: 100vh;
+  background-color: #9983cf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the letter, now absolutely positioned at the center */
+.letter-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the container both vertically and horizontally */
+  background: #cea7e0;
+  color: #003049;
+  width: 70%; /* Adjust the width as needed */
+  height: 70%; /* Adjust the height as needed */
+  padding: 40px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allows scrolling for long text */
+  font-size: 22px;
+  font-family: 'Courier New', Courier, monospace; /* Default font before the handwriting style */
+  text-align: center; /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.letter {
+  white-space: pre-wrap; /* Maintain line breaks */
+  line-height: 1.8; /* Adjust space between lines for readability */
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left; /* Align the text to the left within the container */
+  width: 100%;
+}
+
+/* Close button style */
+.close-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #e55451;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.close-button:hover {
+  background-color: #c0bbcf;
+}
